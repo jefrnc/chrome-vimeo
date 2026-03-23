@@ -1,0 +1,113 @@
+/* Download button overlay */
+.vimeo-dl-btn {
+  position: absolute !important;
+  top: 10px !important;
+  left: 10px !important;
+  z-index: 2147483647 !important;
+  background: rgba(0, 172, 237, 0.85) !important;
+  color: #fff !important;
+  border: 2px solid rgba(255, 255, 255, 0.4) !important;
+  border-radius: 8px !important;
+  padding: 10px 16px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  opacity: 1 !important;
+  transition: background 0.2s ease, transform 0.1s ease !important;
+  pointer-events: auto !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+.vimeo-dl-btn svg {
+  width: 18px !important;
+  height: 18px !important;
+  fill: currentColor !important;
+}
+
+.vimeo-dl-btn:hover {
+  background: rgba(0, 172, 237, 1) !important;
+  transform: scale(1.05) !important;
+  border-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.vimeo-dl-btn:active {
+  transform: scale(0.97) !important;
+}
+
+/* Dropdown menu */
+.vimeo-dl-menu {
+  position: absolute !important;
+  top: 48px !important;
+  left: 10px !important;
+  z-index: 2147483647 !important;
+  background: #1a1a2e !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 8px !important;
+  padding: 6px 0 !important;
+  min-width: 200px !important;
+  display: none !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6) !important;
+  pointer-events: auto !important;
+}
+
+.vimeo-dl-menu.vimeo-dl-open {
+  display: block !important;
+}
+
+.vimeo-dl-menu-item {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 10px 16px !important;
+  color: #fff !important;
+  font-size: 14px !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  border: none !important;
+  background: none !important;
+  width: 100% !important;
+  text-align: left !important;
+  pointer-events: auto !important;
+  box-sizing: border-box !important;
+}
+
+.vimeo-dl-menu-item:hover {
+  background: rgba(0, 172, 237, 0.5) !important;
+}
+
+.vimeo-dl-menu-item:active {
+  background: rgba(0, 172, 237, 0.8) !important;
+}
+
+.vimeo-dl-menu-item .vimeo-dl-quality {
+  font-weight: 600 !important;
+}
+
+.vimeo-dl-menu-item .vimeo-dl-size {
+  font-size: 11px !important;
+  opacity: 0.7 !important;
+}
+
+.vimeo-dl-menu-loading {
+  padding: 12px 14px !important;
+  color: #aaa !important;
+  font-size: 13px !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  text-align: center !important;
+  pointer-events: none !important;
+}
+
+.vimeo-dl-menu-error {
+  padding: 12px 14px !important;
+  color: #ff6b6b !important;
+  font-size: 13px !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  text-align: center !important;
+  pointer-events: none !important;
+}

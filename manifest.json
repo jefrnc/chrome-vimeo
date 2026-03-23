@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Vimeo Video Downloader",
+  "version": "1.0.0",
+  "description": "Download Vimeo videos in maximum quality with audio",
+  "permissions": ["activeTab", "downloads", "scripting", "webRequest", "offscreen"],
+  "host_permissions": [
+    "*://*.vimeo.com/*",
+    "*://player.vimeo.com/*",
+    "*://*.vimeocdn.com/*",
+    "*://*.akamaized.net/*",
+    "*://*.cloudfront.net/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.vimeo.com/*",
+        "*://player.vimeo.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["overlay.css"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
