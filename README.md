@@ -52,7 +52,7 @@ User clicks Download → content.js requests config via background
 
 1. Clone this repo:
    ```bash
-   git clone https://github.com/joseamaita/chrome-vimeo.git
+   git clone https://github.com/jefrnc/chrome-vimeo.git
    ```
 2. Open Chrome and go to `chrome://extensions/`
 3. Enable **Developer mode** (toggle in top right)
